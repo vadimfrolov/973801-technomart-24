@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт</title>
   </head>
   <body>
     <header class="main-header">
@@ -47,11 +47,43 @@
             </ul>
               <a class="button" href="info.html">Подробнее о компании</a>
           </section>
-          <section class="contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-              <p>Вы можете забрать товар сами, заехав в наш офис:</p>
               <img src="img/map.jpg" width="300" height="158" alt="Карта">
+              <section class="contacts">
+                <h2 class="visually-hidden">Контакты</h2>
+                  <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+                  <section class="modal modal-map">
+                    <h2 class="visually-hidden">
+                      Вы можете забрать товар сами, заехав в наш офис:
+                    </h2>
+                    <p>
+                      <img src="img/icon-map-poup.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                    </p>
+                    <button class="modal-close" type="button">
+                      <img src="img/icon-cross.png" width="21" height="21" alt="Закрыть">
+                    </button>
+                </section>
               <a class="button-help" href="contacts.html">Заблудились? Напишите нам</a>
+              <section class="modal modal-login">
+                <h2 class="visually-hidden">Заблудились? Напишите нам</h2>
+                <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label class="visually-hidden" for="user-text">Ваше имя:</label>
+                    <input class="login-icon-password" id="user-text" type="password" name="password" placeholder="Имя и Фамилия">
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="user-name">Ващ e-mail::</label>
+                    <input class="login-icon-user" id="user-name" type="text" name="login" placeholder="email@example.com">
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="user-text">Текст письма</label>
+                    <input class="login-icon-password" id="user-text" type="password" name="password" placeholder="В свободной форме">
+                  </p>
+                </form>
+                <button class="button" type="submit">Отправить</button>
+                <button class="modal-close" type="button">
+                  <img src="img/icon-cross.png" width="21" height="21" alt="Закрыть">
+                </button>
+              </section>
           </section>
         </main>
       <footer class="main-footer">
@@ -91,11 +123,5 @@
               </p>
         </nav>
       </footer>
-          <section class="modal modal-login">
-                <h2>Личный кабинет</h2>
-                <p>Введите свой логин и пароль.</p>
-                <!-- Здесь будет форма -->
-                <span class="modal-close">x</span>
-              </section>
   </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт</title>
   </head>
   <body>
     <header class="main-header">
@@ -36,6 +36,57 @@
       </header>
           <main class="container">
           <h1 class="page-title">Перфораторы</h1>
+          <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
+                    <label for="filter-BOSCH">BOSCH</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
+                    <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
+                    <label for="filter-MAKITA">MAKITA</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="DEWALT" id="filter-DEWALT">
+                    <label for="filter-DEWALT">DEWALT</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="HITACHI" id="filter-HITACHI">
+                    <label for="filter-HITACHI">HITACHI</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew">
+                    <label for="filter-american-crew">American Crew</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>ПИТАНИЕ:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
+                    <label for="filter-shave">АККУМУЛЯТОРНЫЕ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care">
+                    <label for="filter-care">СЕТЕВЫЕ</label>
+                  </li>
+                 
+                </ul>
+              </fieldset>
+              <button type="submit" class="filter-button button">
+                Показать
+              </button>
+            </form>
+          </section>
             <ul class="breadcrumbs">
               <li>
                 <a class="button" href="index.html">
