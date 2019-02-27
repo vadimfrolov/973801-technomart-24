@@ -41,45 +41,41 @@
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
                 <legend>Производители:</legend>
-                <ul>
-                  <li class="filter-option">
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
                     <label for="filter-BOSCH">BOSCH</label>
-                  </li>
-                  <li class="filter-option">
+                  </p>
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
                     <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-                  </li>
-                  <li class="filter-option">
+                  </p>
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
                     <label for="filter-MAKITA">MAKITA</label>
-                  </li>
-                  <li class="filter-option">
+                  </p>
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="DEWALT" id="filter-DEWALT">
                     <label for="filter-DEWALT">DEWALT</label>
-                  </li>
-                  <li class="filter-option">
+                  </p>
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="HITACHI" id="filter-HITACHI">
                     <label for="filter-HITACHI">HITACHI</label>
-                  </li>
-                  <li class="filter-option">
+                  </p>
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew">
                     <label for="filter-american-crew">American Crew</label>
-                  </li>
-                </ul>
+                  </p>
               </fieldset>
               <fieldset>
                 <legend>ПИТАНИЕ:</legend>
-                <ul>
-                  <li class="filter-option">
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
                     <label for="filter-shave">АККУМУЛЯТОРНЫЕ</label>
-                  </li>
-                  <li class="filter-option">
+                  </p>
+                  <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care">
                     <label for="filter-care">СЕТЕВЫЕ</label>
-                  </li>
-                </ul>
+                  </p>
               </fieldset>
               <button type="submit" class="filter-button button">
                 Показать
@@ -125,24 +121,6 @@
                     <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                       <ul class="actions-list">
                         <li><button class="buy" type="button">Купить</button>
-                          <section class="buyproduct">
-                            <h2>Товар добавлен в корзину</h2>
-                            <ul class="twobuttons">
-                              <li>
-                                <a class="button" href="cart.html">
-                                  оформить заказ
-                                </a>
-                              </li>
-                              <li>
-                                <a class="button" href="inner.html">
-                                  продолжить покупки
-                                </a>
-                              </li>
-                            </ul>
-                            <button class="modal-close" type="button" aria-label="Закрыть">
-                              <img src="img/icon-cross.png" width="21" height="21" alt="Закрыть">
-                            </button>
-                          </section>
                         </li>
                         <li><button class="bookmarks" type="button">В закладки</button></li>
                       </ul>
@@ -224,6 +202,20 @@
                   <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
                 </p>
             </nav>
-            </footer>
+          </footer>
+          <section class="buyproduct">
+            <h2>Товар добавлен в корзину</h2>
+            <ul class="twobuttons">
+              <li>
+               <button type="submit" aria-label="оформить заказ">оформить заказ</button>
+              </li>
+              <li>
+                <button type="submit" aria-label="подолжить покупки">продолжить покупки</button>
+              </li>
+            </ul>
+            <button class="modal-close" type="button" aria-label="Закрыть">
+              Закрыть
+            </button>
+          </section>
      </body>
     </html>
