@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Cuprum", "PT Sans";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .down-footer a,
+  .up-footer a {
+    color: #ffffff;
+  }
+
+
+  
+  .products-navigation a {
+    color: #e4be7b;
+}
+  
+  .h2 {
+    color: #000000;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .main-header {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+  
+    background-color: #32425c;
+  }
+
+.social-buttons,
+.products-navigation,
+.chapters-navigation,
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.info a,
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+
+.user-space {
+ background-color: #ffffff;
+}
+
+.phone-number {
+  color: #ee3643
+}
+
+.head-adress {
+  color: #000000;
+}
+
+.user-navigation {
+  color: #ffffff;
+}
+
+.user-buttons {
+  color: #000000;
+  list-style: none;
+}
+
+.shop-text {
+color: #ee3643
+}
+
+.main-header a,
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.info {
+  font-size: 17px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.company-features {
+  color: #000000;
+}
+
+.up-footer {
+  background-color: #32425c;
+}
+
+
+
+
+
+.down-footer {
+  background-color: #293449
+}
+.contacts {
+color: #000000;
+}
+
+.footer-copyright a {
+  color: #e4be7b;
+}
