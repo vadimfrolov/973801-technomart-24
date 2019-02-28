@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -51,19 +50,19 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-              <a class="button-info" href="info.html">Подробнее о компании</a>
+            <p class="button-help"><a class="button-help" href="info.html">Подробнее о компании</a></p>
           </section>
           <section class="contacts">
            <h2 class="visually-hidden">Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+            <p class="info">Вы можете забрать товар сами, заехав в наш офис:</p>
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
-            <p><a class="button-help" href="contacts.html">Заблудились? Напишите нам</a></p>
+            <p class="button-help"><a class="button-help" href="contacts.html">Заблудились? Напишите нам</a></p>
           </section>
         </main>
       <footer class="main-footer">
         <div class="up-footer">
             <a class="button" href="index.html">ТЕХНОМАРТ</a>
-            <p> г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <p class="footer-adress"> г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7(812)555-05-05</p>
         <nav class="chapters-navigation">
             <ul class="chapters-navigation">
@@ -90,34 +89,34 @@
                 <li><a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a></li>
               </ul>
               <p class="footer-copyright">
-                <b>Обратная связь:</b>
+                <b class="down-font">Обратная связь:</b>
                 <a class="button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </p>
               <p class="footer-copyright">
-                <b>Разработано-</b>
+                <b class="down-font">Разработано-</b>
                 <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
               </p>
             </div>
           </div>
         </nav>
       </footer>
-      <section class="modal modal-login">
+      <section class="modal-login">
         <h2 class="visually-hidden">Заблудились? Напишите нам</h2>
         <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <label class="visually-hidden1" for="user-name">Ваше имя:</label>
             <input class="login-icon-name" id="user-text" type="text" name="name" placeholder="Имя и Фамилия">
           </p>
           <p>
-            <label class="visually-hidden" for="user-name">Ващ e-mail::</label>
+            <label class="visually-hidden1" for="user-name">Ваш e-mail::</label>
             <input class="login-icon-e-mail" id="user-text" type="text" name="e-mail" placeholder="email@example.com">
           </p>
           <p>
-            <label class="visually-hidden" for="user-name">Текст письма</label>
+            <label class="visually-hidden1" for="user-name">Текст письма</label>
             <input class="login-icon-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
           </p>
         </form>
-        <button class="button" type="submit" aria-label="Отправить">Отправить</button>
+        <div class="button-help1"><button class="button1" type="submit" aria-label="Отправить">Отправить</button></div>
         <button class="modal-close" type="button" aria-label="Закрыть">
           Закрыть
         </button>

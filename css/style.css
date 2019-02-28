@@ -2,20 +2,28 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "Cuprum", "PT Sans";
-    font-size: 14px;
+    font-family: "Cuprum";
+    font-size: 17px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
   }
+
+
+.button-help {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.checkout-link {
+  background-color: #63a63e;
+}
 
   .down-footer a,
   .up-footer a {
     color: #ffffff;
   }
-
-
   
   .products-navigation a {
     color: #e4be7b;
@@ -23,6 +31,9 @@ body {
   
   .h2 {
     color: #000000;
+    font: "Cuprum";
+    font-size: 30px;
+    line-height: 30px;
   }
 
   a {
@@ -30,10 +41,11 @@ body {
   }
 
   .main-header {
+    font: "Cuprum";
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
-  
+    text-transform: none;
     background-color: #32425c;
   }
 
@@ -42,13 +54,19 @@ body {
 .chapters-navigation,
 .site-navigation,
 .user-navigation {
+  font-size: 18px;
+  line-height: 24px;
   list-style: none;
+  text-transform: none;
 }
 
 .info a,
 .site-navigation a,
 .user-navigation a {
   color: #000000;
+  font: "Cuprum";
+  font-size: 17px;
+  line-height: 17px;
 }
 
 .site-navigation a:hover,
@@ -63,11 +81,18 @@ body {
 }
 
 .phone-number {
+  font: "Cuprum";
+  font-size: 21px;
+  line-height: 21px;
   color: #ee3643
 }
 
 .head-adress {
-  color: #000000;
+  text-align: center;
+  color: #32425c;
+  font: "Cuprum";
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .user-navigation {
@@ -75,12 +100,19 @@ body {
 }
 
 .user-buttons {
+  font: "Cuprum";
+  font-size: 21px;
+  line-height: 21px;
   color: #000000;
   list-style: none;
 }
 
 .shop-text {
-color: #ee3643
+color: #ee3643;
+font: "Cuprum";
+font-size: 16px;
+line-height: 23px;
+font-style: italic;
 }
 
 .main-header a,
@@ -90,9 +122,18 @@ color: #ee3643
 }
 
 .info {
-  font-size: 17px;
-  line-height: 17px;
+  font: "Cuprum";
+  font-size: 13px;
+  line-height: 24px;
   color: #000000;
+  text-transform: none;
+}
+
+.deliverycompany-list {
+  font: "Cuprum";
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
 }
 
 .company-features {
@@ -103,17 +144,47 @@ color: #ee3643
   background-color: #32425c;
 }
 
-
-
-
+.visually-hidden1 {
+  color: #000000;
+  text-transform: none;
+}
 
 .down-footer {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
   background-color: #293449
 }
+
 .contacts {
 color: #000000;
 }
 
 .footer-copyright a {
   color: #e4be7b;
+}
+.button1 {
+  color: #ffffff;
+  background-color: #ee3643;
+  font: inherit;
+  list-style: none;
+}
+
+
+.chapters-navigation a:hover,
+.schapters-navigation a:focus,
+.products-navigation a:hover,
+.products-navigation a:focus {
+  background-color: #242424;
+}
+
+.footer-adress {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.down-font {
+  font-size: 16px;
+  line-height: 18px;
 }
