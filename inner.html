@@ -3,36 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a class="main-header-logo" href="index.html">ТЕХНОМАРТ</a>
       <a href="search.html">Поиск</a>
-      <nav class="main-navigation">
+      <nav class="main-user-block">
         <ul class="user-navigation">
-           <li class="bookmarks-link">Закладки</li>
-           <li class="cart-link">Корзина</li>
-           <li class="checkout-link">Оформить заказ</li>
+          <li class="bookmarks-link">Закладки</li>
+          <li class="cart-link">Корзина</li>
+          <li class="checkout-link">Оформить заказ</li>
         </ul>
-         <p>Интернет-магазин строительных материалов и инструментов для ремонта
+        <div class="user-space">
+         <p class="shop-text">Интернет-магазин строительных материалов и инструментов для ремонта
          </p>
-         <p>+7(812)555-05-05<br>
-             г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8
-         </p>
-           <ul class="user-navigation">
-            <li class="login-link">Войти</li>
-            <li class="registration-link">Регистрация</li>
-         </ul>
-          <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-           <li><a href="info.html">Компания</a></li>
-           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-           <li><a href="special.html">Спецпредложения</a></li>
-           <li><a href="delivery.html">Доставка</a></li>
-           <li><a href="contacts.html">Контакты</a></li>
-          </ul>
+          <p class="phone-number">+7(812)555-05-05<br></p>
+          <p class="head-adress">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8
+        </p>
+        <ul class="user-buttons">
+          <li class="login-link">Войти</li>
+          <li class="registration-link">Регистрация</li>
+        </ul>
+        </div>
+        <ul class="site-navigation">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="info.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
         </nav>
+      </header>
       </header>
           <main class="container">
           <h1 class="page-title">Перфораторы</h1>
@@ -67,7 +74,7 @@
                   </p>
               </fieldset>
               <fieldset>
-                <legend>ПИТАНИЕ:</legend>
+                <legend>Питание:</legend>
                   <p class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
                     <label for="filter-shave">АККУМУЛЯТОРНЫЕ</label>
@@ -88,18 +95,20 @@
                   <img src="img/icon-home.svg" width="14" height="12" alt="На главную">
                 </a>
               </li>
+              <div class="contents">
               <li>
-                <a href="catalog.html">КАТАЛОГ
+                <a href="catalog.html">Каталог
                 </a>
               </li>
               <li>
-                <a href="tools.html">ИНСТРУМЕНТ
+                <a href="tools.html">Инструмент
                 </a>
               </li>
-              <li class="breadcrumbs-current">ПЕРФОРАТОРЫ</li>
+              <li class="breadcrumbs-current">Перфораторы</li>
+            </div>
             </ul>
             <section class="catalog">
-              <h2>Перфораторы</h2>
+              <div class="headline2"><h2>Перфораторы</h2></div>
               <aside class="filter">
               </aside>
               <div class="sort"></div>
@@ -163,44 +172,45 @@
               </ul>
            </section>
            </main>
-            <footer class="main-footer">
+           <footer class="main-footer">
+            <div class="up-footer">
                 <a class="button" href="index.html">ТЕХНОМАРТ</a>
-                <p> г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                <p class="footer-adress"> г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                   +7(812)555-05-05</p>
-
-                  <nav class="site-navigation">
-                  <ul class="site-navigation">
+            <nav class="chapters-navigation">
+                <ul class="chapters-navigation">
                     <li><a href="info.html">Компания</a></li>
                     <li><a href="news.html">Новости</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="delivery.html">Доставка</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                  </ul>
-
-                  <ul class="site-navigation">
-                    <li><a href="materials.html">Материалы</a></li>
-                    <li><a href="tech.html">Техника</a></li>
-                    <li><a href="tools.html">Инструмент</a></li>
-                    <li><a href="special.html">Спецпредложения</a></li>
-                  </ul>
-
+                </ul>
+                <ul class="products-navigation">
+                  <li><a href="materials.html">Материалы</a></li>
+                  <li><a href="tech.html">Техника</a></li>
+                  <li><a href="tools.html">Инструмент</a></li>
+                  <li><a href="special.html">Спецпредложения</a></li>
+                </ul>
+              </div>
+              <div class="down-footer">
                 <p>© 2010-2017 Компания «Техномарт» Все права защищены
                 </p>
-            <div class="footer-social">
-             <ul>
-              <li><a class="social-button" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте">Вконтакте</a></li>
-              <li><a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a></li>
-              <li><a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a></li>
-             </ul>
-           </div>
-                <p class="footer-copyright">
-                  <b>Обратная связь:</b>
-                  <a class="button" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </p>
-                <p class="footer-copyright">
-                  <b>Разработано-</b>
-                  <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-                </p>
+                <div class="footer-social">
+                  <ul class="social-buttons">
+                    <li><a class="social-button" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте">Вконтакте</a></li>
+                    <li><a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a></li>
+                    <li><a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a></li>
+                  </ul>
+                  <p class="footer-copyright">
+                    <b class="down-font">Обратная связь:</b>
+                    <a class="button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                  </p>
+                  <p class="footer-copyright">
+                    <b class="down-font">Разработано-</b>
+                    <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
+                  </p>
+                </div>
+              </div>
             </nav>
           </footer>
           <section class="buyproduct">
