@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Cuprum";
+  font-family: font-family:;
   src: local("Cuprum Regular"), local("Cuprum-Regular"), url("../fonts/cuprum.woff") format("woff"), url("../fonts/cuprum.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -16,13 +16,6 @@
   font-family: "Cuprum";
   src: local("Cuprum Italic"), local("Cuprum-Italic"), url("../fonts/cuprumitalic.woff") format("woff"), url("../fonts/cuprumitalic.woff2") format("woff2");
   font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Cuprum";
-  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"), url("../fonts/cuprumbolditalic.woff") format("woff"), url("../fonts/cuprumbolditalic.woff2") format("woff2");
-  font-weight: bold;
   font-style: italic;
 }
 
@@ -235,7 +228,7 @@ html {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .header-main-menu .catalog-basket:hover,
@@ -355,6 +348,7 @@ html {
 .header-enter a {
   background-color: #ffffff;
   display: inline-block;
+  vertical-align: middle;
   padding-left: 25px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -621,7 +615,7 @@ html {
   color: #000000;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -659,6 +653,11 @@ html {
 -----Catalog content-----
  */
 
+ fieldset {
+  border: none;
+  padding: 0;
+ }
+
 .catalog-page-content {
   display: flex;
   justify-content: space-between;
@@ -680,7 +679,7 @@ html {
   color: #000000;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   padding-left: 19px;
   padding-top: 10px;
@@ -694,7 +693,7 @@ html {
   color: #000000;
   font-size: 17px;
   line-height: 30px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -792,7 +791,7 @@ html {
   display: block;
   font-size: 17px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   color: #000000;
 }
@@ -835,7 +834,7 @@ html {
   margin-left: 34px;
   font-size: 15px;
   line-height: 20px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
@@ -921,7 +920,7 @@ html {
   display: block;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   color: #000000;
   margin-left: 34px;
@@ -993,7 +992,7 @@ html {
   box-sizing: border-box;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -1064,7 +1063,7 @@ html {
   color: #000000;
   font-size: 13px;
   line-height: 13px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   margin-left: 19px;
   margin-top: 13px;
@@ -1125,7 +1124,7 @@ html {
   color: #000000;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 10px;
@@ -1186,7 +1185,7 @@ html {
   color: #000000;
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   margin: 0px;
   padding: 0px;
   padding-bottom: 68px;
@@ -1386,6 +1385,7 @@ main .pre-footer-catalog {
   background-color: #f2f6f8;
   display: flex;
   overflow: hidden;
+  font-family: "Cuprum";
 }
 
 .perforator-slider-slides .slide {
@@ -1394,13 +1394,13 @@ main .pre-footer-catalog {
 
 
 .perforator-slider-slides .slide-1 {
-  background-image: url("../img/Perforator-slide-1.jpg");
+  background-image: url("../img/Perforator-slide-2.jpg");
   flex-basis: 620px;
   flex-shrink: 0;
 }
 
 .perforator-slider-slides .slide-2 {
-  background-image: url("../img/Perforator-slide-2.jpg");
+  background-image: url("../img/Perforator-slide-1.jpg");
   flex-basis: 620px;
   flex-shrink: 0;
 }
@@ -1418,7 +1418,7 @@ main .pre-footer-catalog {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   margin: 0px;
   margin-top: 2px;
   margin-left: 2px;
@@ -1652,18 +1652,19 @@ main .pre-footer-catalog {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  font-family: 'PT Sans', sans-serif, "Arial";
-  font-weight: bold;
+  font-family: 'PTSans', sans-serif, "Arial";
+  font-weight: 700;
   margin-bottom: 0px;
 }
 
 .popular-items-old-price {
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   font-weight: bold;
   text-decoration: line-through;
   margin-top: 11px;
@@ -1680,7 +1681,7 @@ main .pre-footer-catalog {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   font-weight: bold;
   width: 122px;
   background-color: #ee3643;
@@ -2007,7 +2008,7 @@ main .pre-footer-catalog {
   width: 400px;
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   color: #000000;
   margin: 0px;
 }
@@ -2043,7 +2044,7 @@ main .pre-footer-catalog {
   margin: 0px;
   margin-top: 9px;
   margin-left: 2px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 23px;
 }
 
@@ -2085,7 +2086,7 @@ main .pre-footer-catalog {
   width: 400px;
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   color: #000000;
   margin: 0px;
 }
@@ -2175,7 +2176,7 @@ main .pre-footer-catalog {
 .about-us .about-us-contacts p  {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif, "Arial";
+  font-family: 'PTSans', sans-serif, "Arial";
   color: #000000;
   margin: 0px;
   margin-bottom: 25px;
@@ -2382,6 +2383,7 @@ main .pre-footer-catalog {
 
 .page-footer {
   display: flex;
+  background-color: #293449;
 }
 
 .page-footer p {
@@ -2511,6 +2513,8 @@ main .pre-footer-catalog {
   padding-bottom: 9px;
   border-radius: 3px;
   margin-top: 5px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .popup-name,
@@ -2519,6 +2523,8 @@ main .pre-footer-catalog {
   padding: 0px;
   width: 220px;
 }
+
+.popup-name
 
 .popup-write-us .popup-write-us-close {
   position: absolute;
@@ -2555,10 +2561,10 @@ main .pre-footer-catalog {
   border-radius: 1px;
 }
 
-.popup-write-us input::-webkit-input-placeholder { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
-.popup-write-us input::-moz-placeholder          { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
-.popup-write-us input:-moz-placeholder           { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
-.popup-write-us input:-ms-input-placeholder      { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
+.popup-write-us input::-webkit-input-placeholder { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
+.popup-write-us input::-moz-placeholder          { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
+.popup-write-us input:-moz-placeholder           { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
+.popup-write-us input:-ms-input-placeholder      { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
 
 .popup-letter {
   margin-top: 20px;
@@ -2575,10 +2581,10 @@ main .pre-footer-catalog {
   margin-bottom: 29px;
 }
 
-.popup-write-us textarea::-webkit-input-placeholder { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
-.popup-write-us textarea::-moz-placeholder          { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
-.popup-write-us textarea:-moz-placeholder           { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
-.popup-write-us textarea:-ms-input-placeholder      { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PT Sans', sans-serif, "Arial";}
+.popup-write-us textarea::-webkit-input-placeholder { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
+.popup-write-us textarea::-moz-placeholder          { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
+.popup-write-us textarea:-moz-placeholder           { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
+.popup-write-us textarea:-ms-input-placeholder      { color: #999999; font-size: 13px; line-height: 18px; font-family: 'PTSans', sans-serif, "Arial";}
 
 .popup-write-us-submit {
   position: absolute;

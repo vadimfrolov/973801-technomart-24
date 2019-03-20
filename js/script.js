@@ -1,4 +1,4 @@
-﻿var popupWriteUs = document.querySelector(".popup-write-us");
+var popupWriteUs = document.querySelector(".popup-write-us");
 var openPopupWriteUs = document.querySelector(".btn-write-us");
 var closePopupWriteUs = document.querySelector(".popup-write-us-close");
 var windowPopup = document.querySelector(".window-popup"); //Фон всех попапов для их закрытия
@@ -91,4 +91,3 @@ closePopupAddToBasket.addEventListener ("click", function (event) {
  popupAddToBasket.classList.remove("popup-add-to-basket-show");
  document.querySelector(".window-popup").style.display = "none";
 });
-
