@@ -112,6 +112,12 @@ html {
   outline: none;
 }
 
+.catalog-filter-manufacturer-checkbox:focus ~ label {
+  background-color: #ffffff;
+  color: #000000;
+  outline: none;
+}
+
 .header-main-menu input[type="search"]:focus ~ label[for="search"]::before {
   background-image: url("../img/main-spritesheet.png");
   background-position: -50px -1810px;
@@ -227,9 +233,24 @@ html {
   background-color: #ee3643;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+ 
 
 .header-main-menu .catalog-basket:hover,
 .header-main-menu .header-cart:hover::before {
@@ -2420,7 +2441,6 @@ main .pre-footer-catalog {
   height: 40px;
   border-radius: 100%;
   background-color: #212a3a;
-  font-size: 0px;
   background-image: url("../img/main-spritesheet.png");
   background-repeat: no-repeat;
 }
