@@ -9,17 +9,20 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="main-header-line">
-        <h1 class="visually-hidden">Техномарт</h1>
-        <div class="header-main-menu container">
-          <a class="header-logo" href="#">Техномарт</a>
-          <form class="search" action="/" method="get">
-            <input type="search" id="search" placeholder="Поиск:">
-          </form>
-          <label for="search" class="visually-hidden">Поиск</label>
-          <a class="header-bookmarks" href="#">Закладки: 0</a>
-          <a class="header-cart" href="#">Корзина: 0</a>
-          <a class="header-order" href="#">Оформить заказ</a>
+      <section class="header-top">
+        <div class="wrapper">
+          <div class="container">
+            <h2 class="visually-hidden">Меню</h2>
+            <a class="header-top-item first"><img src="img/logo-technomart.svg" width="110" height="18" alt="Логотип магазина «Техномарт»"/>
+            </a>
+            <form class="header-top-item header-search-form" action="https://echo.htmlacademy.ru" method="get">
+              <input class="search-field" type="search" name="search-header" id="search-header" placeholder="Поиск:"/>
+              <label class="visually-hidden">поиск</label >
+            </form>
+            <a class="header-top-item second" href="#">Закладки: 0</a>
+            <a class="header-top-item third" href="#">Корзина: 0</a>
+            <a class="header-top-item fourth" href="#">Оформить заказ</a>
+          </div>
         </div>
       </section>
       <section class="middle-header">
@@ -81,8 +84,8 @@
           <div class="perforator-slider-control">
             <label class="perforator-slider-control-main-slider-1" for="perforator-slider-radio-1"><span class="visually-hidden">На первый слайд</span></label>
             <label class="perforator-slider-control-main-slider-2" for="perforator-slider-radio-2"><span class="visually-hidden">На второй слайд</span>></label>
-            <label class="perforator-slider-left-arrow" for="perforator-slider-radio-1"><span class="visually-hidden">Стрелка влево</span></label>
-            <label class="perforator-slider-right-arrow" for="perforator-slider-radio-2"><span class="visually-hidden">Стрелка вправо</span></label>
+            <label class="perforator-slider-left-arrow" for="perforator-slider-radio-1"><span class="visually-hidden">Предыдущий слайд</span></label>
+            <label class="perforator-slider-right-arrow" for="perforator-slider-radio-2"><span class="visually-hidden">Следующий слайд</span></label>
           </div>
         </div>
         <div class="aside-card">
@@ -101,10 +104,12 @@
           <h2>Популярные товары:</h2>
           <a class="btn" href="#">Все популярные товары</a>
         </div>
-        <section class="popular-items-content">
+        <div class="popular-items-content">
           <div class="popular-items-item popular-item-1">
             <img class="popular-perf-img-1" src="img/BFG-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            <p><span style="display: block"><b>Перфоратор BOSCH</b></span><span style="display: block">BFG 9000</span><span class="popular-items-old-price">32500 р.</span></p>
+            <p><b>Перфоратор BOSCH</b></p>
+            <p><b>BFG 9000</b></p>
+            <span class="popular-items-old-price">32500 р.</span>
             <a class="popular-items-new-price" href="#">25500 р.</a>
             <div class="popular-items-item-cover-1">
               <button class="btn-popular-buy">Купить</button>
@@ -113,7 +118,9 @@
           </div>
           <div class="popular-items-item popular-item-2">
             <img class="popular-perf-img-2" src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            <p><span style="display: block"><b>Перфоратор BOSCH</b></span><span style="display: block">BFG 3000</span><span class="popular-items-old-price">22500 р.</span></p>
+            <p><b>Перфоратор BOSCH</b></p>
+            <p><b>BFG 3000</b></p>
+            <span class="popular-items-old-price">22500 р.</span>
             <a class="popular-items-new-price" href="#">15500 р.</a>
             <div class="popular-items-item-cover-2">
               <button class="btn-popular-buy">Купить</button>
@@ -122,55 +129,60 @@
           </div>
           <div class="popular-items-item popular-item-3">
             <img class="popular-perf-img-3" src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            <p><span style="display: block"><b>Перфоратор BOSCH</b></span><span style="display: block">BFG 6000</span><span class="popular-items-old-price">30500 р.</span></p>
+            <p><b>Перфоратор BOSCH</b></p>
+            <p><b>BFG 6000</b></p>
+            <span class="popular-items-old-price">30500 р.</span>
             <a class="popular-items-new-price" href="#">25500 р.</a>
             <div class="popular-items-item-cover-3">
               <button class="btn-popular-buy">Купить</button>
               <a class="btn-popular-bookmarks" href="#">В закладки</a>
             </div>
           </div>
-          <div class="popular-items-item popular-item-4">
+          <div class="popular-items-item popular-item-4 tag-new">
             <img class="popular-perf-img-4" src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            <p><span style="display: block"><b>Перфоратор BOSCH</b></span><span style="display: block">BFG 2000</span></p>
+            <p><b>Перфоратор BOSCH</b></p>
+            <p><b>BFG 2000</b></p>
             <a class="popular-items-new-price price-four" href="#">12500 р.</a>
             <div class="popular-items-item-cover-4">
               <button class="btn-popular-buy">Купить</button>
               <a class="btn-popular-bookmarks" href="#">В закладки</a>
             </div>
           </div>
-        </section>
-      </section>
-      <section class="popular-manufacturer container">
-        <div class="popular-manufacturer-title">
-          <h2>Популярные производители:</h2>
-          <a class="btn" href="#">Все производители</a>
         </div>
-        <section class="popular-manufacturer-content">
-          <a href="#" class="popular-manufacturer-item">
-           <img src="img/bosch.png" width="126" height="37" alt="bosch">
-          </a>
-          <a href="#" class="popular-manufacturer-item">
-            <img src="img/Makita.png" width="123" height="40" alt="Makita">
-          </a>
-          <a href="#" class="popular-manufacturer-item">
-            <img src="img/DeWALT.png" width="146" height="44" alt="DeWALT">
-          </a>
-          <a href="#" class="popular-manufacturer-item">
-            <img src="img/Interskol.png" width="200" height="88" alt="Interskol">
-          </a>
-          <a href="#" class="popular-manufacturer-item pmi-5">
-            <img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
-          </a>
-          <a href="#" class="popular-manufacturer-item pmi-6">
-            <img src="img/LG.png" width="121" height="73" alt="LG">
-          </a>
-          <a href="#" class="popular-manufacturer-item pmi-7">
-            <img src="img/AEG.png" width="151" height="96" alt=" AEG">
-          </a>
-          <a href="#" class="popular-manufacturer-item pmi-8">
-            <img src="img/Metabo.png" width="204" height="69" alt="Metabo">
-          </a>
-        </section>
+      </section>
+      <section class="brands">
+        <div class="container">
+          <div class="popular-brands-title">
+            <h2>Популярные производители:</h2>
+            <a class="btn brands-btn" href="#">Все производители</a>
+          </div>
+          <ul class="brands-items">
+            <li class="brands-item brands-bosch">
+              <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Товарный знак бренда Bosch"></a>
+            </li>
+            <li class="brands-item brands-makita">
+              <a href="#"><img src="img/makita.jpg" width="123" height="40" alt="Товарный знак бренда Makita"></a>
+            </li>
+            <li class="brands-item brands-dewalt">
+              <a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="Товарный знак бренда DeWalt"></a>
+            </li>
+            <li class="brands-item brands-interscol">
+              <a href="#"><img src="img/interscol.jpg" width="200" height="88" alt="Товарный знак бренда Интерскол"></a>
+            </li>
+            <li class="brands-item brands-hitachi">
+              <a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="Товарный знак бренда HITACHI"></a>
+            </li>
+            <li class="brands-item brands-lg">
+              <a href="#"><img src="img/lg.jpg" width="121" height="73" alt="Товарный знак бренда LG"></a>
+            </li>
+            <li class="brands-item brands-aeg">
+              <a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="Товарный знак бренда AEG"></a>
+            </li>
+            <li class="brands-item brands-metabo">
+              <a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="Товарный знак бренда Metabo"></a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="service-background">
         <div class="service service-container">
@@ -224,10 +236,12 @@
           <div class="main-map">
             <img class="js-map" src="img/main-map.jpg" width="300" height="158" alt="карта">
           </div>
-          <a class="btn btn-write-us" href="#">Заблудились? Напишите нам!</a>
+          <a class="btn btn-write-us" href="writeus.html">Заблудились? Напишите нам!</a>
         </div>
       </section>
-      <section class="pre-footer-background">
+    </main>
+    <footer class="page-footer-background">
+      <section class="pre-footer-background1">
         <div class="pre-footer container">
           <div class="pre-footer-first-row">
             <a class="footer-logo" href="#">Техномарт</a>
@@ -250,8 +264,6 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="page-footer-background">
       <section class="page-footer container">
         <p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>Все права защищены</p>
         <div class="footer-socials">
@@ -266,7 +278,7 @@
     <section class="window-popup">
     </section>
     <section class="popup-write-us">
-      <button class="popup-write-us-close" value="Закрыть"></button>
+      <button class="popup-write-us-close" value="Закрыть"><span class="visually-hidden">закрыть</span></button>
       <form class="popup-write-us-form" action="#" method="post">
         <section class="popup-name-and-mail">
           <div class="popup-name">
@@ -295,7 +307,6 @@
       <a class="btn popup-add-to-basket-finish" href="#">Оформить заказ</a>
       <button class="btn popup-add-to-basket-continue" value="Продолжить покупки">Продолжить покупки</button>
     </div>
-    <script src="js/script.js">
-    </script>
+    <script src="js/scriptmin.js"></script>   
   </body>
 </html>

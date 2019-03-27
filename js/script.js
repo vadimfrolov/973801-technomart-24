@@ -74,7 +74,6 @@ openPopupAddToBasket.addEventListener ("click", function (event) {
  popupAddToBasket.classList.add("popup-add-to-basket-show");
  document.querySelector(".window-popup").style.display = "block";
 });
-//Доделать чтобы открывались кнопки купить! Дело в том https://ru.stackoverflow.com/questions/543392/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D0%B4%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-like-addeventlistener-is-not-a-function
 
 window.addEventListener ("keydown", function (event) {
  if (event.keyCode == 27) {
